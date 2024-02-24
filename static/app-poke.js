@@ -83,7 +83,7 @@ $(document).ready(function() {
     function showPokemon(){
         catchButton.disabled = true;
         for (let item of pokemonDivTextArr) {
-            pokemonDiv.append(`<div class="card align-self-stretch" style="width: 18rem;">
+            pokemonDiv.append(`<div class="card align-self-stretch mx-2" style="width: 18rem;">
                                 <img class="card-img-top" src="${item.image}" alt="${item.name} sprite">
                                     <div class="card-body">
                                         <h5 class="card-title">${item.name}</h5>
