@@ -73,7 +73,7 @@ $(document).ready(function() {
     }
 
     function createButton(){
-        catchButton = document.createElement('button');
+        let catchButton = document.createElement('button');
         catchButton.classList.add('btn', 'btn-warning', 'p-2', 'mb-5');
         catchButton.id = 'get-pokemon';
         catchButton.innerText = "GOTTA CATCH'EM ALL";
