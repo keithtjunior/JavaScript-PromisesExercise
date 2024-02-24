@@ -7,6 +7,7 @@ $(document).ready(function() {
 
     let buttonDiv = $('#button-div');
     let cardsDiv = $('#cards-div');
+    let errDiv = $('#error-div');
     let getCardBtn;
 
     $(document).on('click', '#get-card', getCard);
@@ -84,7 +85,7 @@ $(document).ready(function() {
     }
 
     function displayErr(err){
-        cardsDiv.append(`<p>${err.message}. Please refresh the page.</p>`)
+        errDiv.append(`<p>${err.message}. Please refresh the page.</p>`)
     }
 
 
