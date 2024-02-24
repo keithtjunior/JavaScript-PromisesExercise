@@ -81,7 +81,8 @@ $(document).ready(function() {
     }
 
     function showPokemon(){
-        catchButton.disabled = true;
+        // catchButton.disabled = true;
+        $('#get-pokemon').prop('disabled', true);
         for (let item of pokemonDivTextArr) {
             pokemonDiv.append(`<div class="card align-self-stretch mx-2" style="width: 18rem;">
                                 <img class="card-img-top" src="${item.image}" alt="${item.name} sprite">
